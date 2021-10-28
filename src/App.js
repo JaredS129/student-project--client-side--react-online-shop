@@ -25,7 +25,6 @@ function App() {
   return (
     <div className="container">
       <Header image={logo}/>
-      <h1>Sunglass Shop</h1>
       <ul className="products-container">
       {products.map((product) => {
         return (
@@ -35,6 +34,10 @@ function App() {
             name={product.name}
             description={product.description}
             price={formatAmount(product.prices[0].unit_amount)}
+            category={product.metadata.category}
+            daysSincePosted={product.metadata.daysSincePosted}
+            location={product.metadata.location}
+            requestedBy={product.metadata.requestedBy}
           />
         );
       })}

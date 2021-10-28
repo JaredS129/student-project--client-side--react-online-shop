@@ -6,7 +6,7 @@ const Header = ( {image} ) => {
         <img src={image} alt="placeholder logo"></img>
       </div>
       <div className="tagline">
-        <p>Tagline goes here</p>
+        <h1>THE GIVE BACK APP</h1>
       </div>
     </header>
   );
