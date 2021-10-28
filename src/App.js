@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Product from "./services/product";
 import formatAmount from "./services/formatAmount";
+import Header from "./services/header"
+import logo from "./img/placeholder-logo.png"
 
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
@@ -22,8 +24,9 @@ function App() {
 
   return (
     <div className="container">
+      <Header image={logo}/>
       <h1>Sunglass Shop</h1>
-      <ul>
+      <ul className="products-container">
       {products.map((product) => {
         return (
           <Product

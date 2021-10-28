@@ -1,0 +1,20 @@
+.header {
+    background-color: #363636;
+    display: grid;
+    justify-content: center;
+}
+
+.tagline {
+    color: white;
+}
+
+.products-container {
+    display: grid;
+    justify-content: center;
+    width: 90vw;
+}
+
+.product-image {
+    width: 20rem;
+    height: auto;
+}
