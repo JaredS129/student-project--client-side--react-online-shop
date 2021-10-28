@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Product from "./services/product";
+import formatAmount from "./services/formatAmount";
 
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
@@ -21,6 +23,19 @@ function App() {
   return (
     <div className="container">
       <h1>Sunglass Shop</h1>
+      <ul>
+      {products.map((product) => {
+        return (
+          <Product
+            key={product.id}
+            image={product.images[0]}
+            name={product.name}
+            description={product.description}
+            price={formatAmount(product.prices[0].unit_amount)}
+          />
+        );
+      })}
+    </ul>
     </div>
   );
 }
