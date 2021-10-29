@@ -8,7 +8,8 @@ const SortBy = ({ setSortBy }) => {
       <div className="sortBy">
         <label htmlFor="sort">Sort by</label>
         <select id="sort" onChange={onChange}>
-          <option value="latest">Latest</option>
+          <option value="latest">Latest - Oldest</option>
+          <option value="oldest">Oldest - Latest</option>
           <option value="low">Price: Low</option>
           <option value="high">Price: High</option>
         </select>

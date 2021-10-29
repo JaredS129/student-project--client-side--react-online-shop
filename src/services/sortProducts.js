@@ -11,8 +11,12 @@ const sortProducts = (products, sortBy) => {
       return bPrice - aPrice;
     }
 
+    if (sortBy === "oldest") {
+      return productB.metadata.daysSincePosted - productA.metadata.daysSincePosted;
+    }
+
     if (sortBy === "latest") {
-      return productB.created - productA.created;
+      return productA.metadata.daysSincePosted - productB.metadata.daysSincePosted;
     }
   });
 
