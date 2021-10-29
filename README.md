@@ -14,6 +14,7 @@ This project uses the following systems to work correctly:
 ## Prerequisites
 
 - [Node](https://nodejs.org/en/)
+- React social icons, run - `npm install react-social-icons`
 
 ## Local Development
 

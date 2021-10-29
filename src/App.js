@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./services/header";
-import logo from "./img/placeholder-logo.png";
 import FilterBy from "./services/filterBy";
 import SortBy from "./services/sortBy";
 import filterByCategory from "./services/filterByCategory";
@@ -35,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header image={logo} />
+      <Header />
       <div className="selections">
         <FilterBy setFilterBy={setFilterBy} />
         <SortBy setSortBy={setSortBy} />

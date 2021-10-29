@@ -1,4 +1,7 @@
 import { checkout } from "../services/checkout";
+// Social icons adapted from npm react module:
+// https://www.npmjs.com/package/react-social-icons
+import { SocialIcon } from "react-social-icons";
 
 const Product = ({
   image,
@@ -16,7 +19,9 @@ const Product = ({
       <h3 className="product-title">{name}</h3>
       <div className="product-grid">
         <div className="image-price">
-          <img src={image} alt={name} className="product-image" />
+          <div className="image-container">
+            <img src={image} alt={name} className="product-image" />
+          </div>
           <p className="price">{price}</p>
         </div>
         <div className="product-details">
@@ -39,9 +44,38 @@ const Product = ({
             </li>
             <li className="details-item">
               <h4>Share</h4>
+              <div className="social">
+                <SocialIcon
+                  url="https://twitter.com/"
+                  className="icon"
+                  style={{ width: "2rem", height: "2rem" }}
+                />
+                <SocialIcon
+                  url="https://facebook.com/"
+                  className="icon"
+                  style={{ width: "2rem", height: "2rem" }}
+                />
+                <SocialIcon
+                  url="https://instagram.com/"
+                  className="icon"
+                  style={{ width: "2rem", height: "2rem" }}
+                />
+                <SocialIcon
+                  url="https://tiktok.com/"
+                  className="icon"
+                  style={{ width: "2rem", height: "2rem" }}
+                />
+              </div>
             </li>
           </ul>
-          <button onClick={() => { checkout(priceId) }} className="buy-now">Buy Now</button>
+          <button
+            onClick={() => {
+              checkout(priceId);
+            }}
+            className="buy-now"
+          >
+            Buy Now
+          </button>
         </div>
       </div>
       <p>{description}</p>

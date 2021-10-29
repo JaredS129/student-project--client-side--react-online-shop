@@ -30,7 +30,7 @@ h4 {
 }
 
 .buy-now {
-  background-color: #63ce98;
+  background-color: #3baa72;
   border: none;
   font-size: 1.5rem;
   color: white;
@@ -42,17 +42,24 @@ h4 {
 }
 
 .buy-now:hover {
-  background-color: #2B955F;
+  background-color: #73dba7;
 }
 
 .container {
   font-family: "Poppins", sans-serif;
+  min-width: 32rem;
 }
 
 .header {
-  background-color: #63ce98;
+  background-color: #3baa72;
   display: grid;
   justify-content: center;
+  min-width: 32rem;
+}
+
+.logo {
+  width: 10rem;
+  filter: invert(100%);
 }
 
 .logo-container {
@@ -93,16 +100,16 @@ h4 {
   filter: drop-shadow(9px 11px 7px #e0e0e0);
   border-radius: 0.4rem;
   padding: 1.5rem;
+  min-width: 32rem;
 }
 
 .image-price {
   display: grid;
   background-color: #383838;
-  margin-bottom: 0.7rem;
 }
 
 .product-title {
-  color: #63ce98;
+  color: #3baa72;
   margin-bottom: 0.3rem;
 }
 
@@ -114,6 +121,7 @@ h4 {
 .product-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 1rem;
 }
 
 .product-details {
@@ -130,13 +138,17 @@ h4 {
   color: white;
 }
 
-@media only screen and (min-width: 53rem) {
+.icon {
+  width: 1rem;
+}
+
+@media only screen and (min-width: 66.6rem) {
   .products-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 81rem) {
+@media only screen and (min-width: 99.5rem) {
   .products-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
