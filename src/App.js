@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./services/header";
+import Footer from "./services/footer"
 import FilterBy from "./services/filterBy";
 import SortBy from "./services/sortBy";
 import filterByCategory from "./services/filterByCategory";
@@ -40,6 +41,7 @@ function App() {
         <SortBy setSortBy={setSortBy} />
       </div>
       <Products products={filteredProducts} />
+      <Footer />
     </div>
   );
 }
