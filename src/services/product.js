@@ -1,4 +1,16 @@
-const Product = ({ image, name, description, price, requestedBy, daysSincePosted, location, category }) => {
+import { checkout } from "../services/checkout";
+
+const Product = ({
+  image,
+  name,
+  description,
+  price,
+  requestedBy,
+  daysSincePosted,
+  location,
+  category,
+  priceId,
+}) => {
   return (
     <li className="product">
       <h3>{name}</h3>
@@ -29,7 +41,7 @@ const Product = ({ image, name, description, price, requestedBy, daysSincePosted
               <h4>Share</h4>
             </li>
           </ul>
-          <button>Buy Now</button>
+          <button onClick={() => { checkout(priceId) }}>Buy Now</button>
         </div>
       </div>
       <p>{description}</p>
