@@ -6,7 +6,7 @@ const FilterBy = ({ setFilterBy }) => {
     return (
       <div className="filterBy">
         <label htmlFor="category">Filter by</label>
-        <select id="category" onChange={onChange}>
+        <select id="category" onChange={onChange} className="dropdown">
           <option value="all">All</option>
           <option value="homeware">Homeware</option>
           <option value="food-drink">Food and Drink</option>

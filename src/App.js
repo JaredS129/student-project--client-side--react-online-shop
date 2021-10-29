@@ -6,7 +6,7 @@ import FilterBy from "./services/filterBy";
 import SortBy from "./services/sortBy";
 import filterByCategory from "./services/filterByCategory";
 import sortProducts from "./services/sortProducts";
-import Products from "./services/products"
+import Products from "./services/products";
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
 
@@ -36,9 +36,11 @@ function App() {
   return (
     <div className="container">
       <Header image={logo} />
-      <FilterBy setFilterBy={setFilterBy} />
-      <SortBy setSortBy={setSortBy} />
-      <Products products={filteredProducts}/>
+      <div className="selections">
+        <FilterBy setFilterBy={setFilterBy} />
+        <SortBy setSortBy={setSortBy} />
+      </div>
+      <Products products={filteredProducts} />
     </div>
   );
 }
