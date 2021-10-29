@@ -12,11 +12,15 @@ const sortProducts = (products, sortBy) => {
     }
 
     if (sortBy === "oldest") {
-      return productB.metadata.daysSincePosted - productA.metadata.daysSincePosted;
+      return (
+        productB.metadata.daysSincePosted - productA.metadata.daysSincePosted
+      );
     }
 
     if (sortBy === "latest") {
-      return productA.metadata.daysSincePosted - productB.metadata.daysSincePosted;
+      return (
+        productA.metadata.daysSincePosted - productB.metadata.daysSincePosted
+      );
     }
   });
 
