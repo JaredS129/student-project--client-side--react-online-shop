@@ -1,7 +1,7 @@
 # The Give Back App
 An online marketplace that makes it easier for others to help those in need and easier for those in need to find help. Pay it forward and buy a gift for someone else in need.
 
-screenshot here
+![Screenshot of The Give Back App](src/img/screenshot.png)
 
 ## Dependencies
 
@@ -14,7 +14,7 @@ This project uses the following systems to work correctly:
 ## Prerequisites
 
 - [Node](https://nodejs.org/en/)
-- React social icons, run - `npm install react-social-icons`
+- React social icons: Run `npm install react-social-icons`
 
 ## Local Development
 
